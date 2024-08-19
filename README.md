@@ -26,6 +26,8 @@ third will error as the changes will already exist in the new code.
 Switch to the target branch
     ```git switch target```
 
-1. Try to cherry pick the 'add git log commit'
-2. Try to cherry pick the 'add git log commit'
-3. Try to cherry pick the 'add git log commit'
+Try to cherry pick the following commits from the main branch to the target branch
+
+1. add gitignore
+2. fix exercise instructions
+3. add example.md
