@@ -17,6 +17,13 @@ contents of the entire branch. For example, when you:
 [Source](https://docs.gitlab.com/ee/user/project/merge_requests/cherry_pick_changes.html)
 Also see [https://www.git-scm.com/docs/git-cherry-pick]
 
+## How to do it
+
+1. Make sure your on the branch that will recieve the commit you're replicating
+2. Find the commit hash of the commit you want to copy
+3. Run `git cherry-pick REPLACE-ME-WITH-COMMIT-ID-YOUR-COPYING`
+4. Deal with the results, this could work, result in a merge confilct you'd need to resolve, or report that the cherry pick would result in an empty commit in which case you can choose to skip or allow the empty commit
+
 ## Practice
 
 We'll try to take three commits from the main branch to the target branch. The
