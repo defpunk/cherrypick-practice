@@ -21,6 +21,7 @@ Also see [https://www.git-scm.com/docs/git-cherry-pick]
 
 1. Make sure your on the branch that will recieve the commit you're replicating
 2. Find the commit hash of the commit you want to copy
+    hint `git log --oneline main` will show you what's on the main branch
 3. Run `git cherry-pick REPLACE-ME-WITH-COMMIT-ID-YOUR-COPYING`
 4. Deal with the results, this could work, result in a merge confilct you'd need to resolve, or report that the cherry pick would result in an empty commit in which case you can choose to skip or allow the empty commit
 
@@ -41,5 +42,9 @@ This line has been added to cause a merge conflict
 2. fix exercise instructions
 3. add example.md
 
-Tip ```git log main --oneline``` will show you the commit log in a shortened format
+### Tips
+
+```git log main --oneline``` will show you the commit log in a shortened format
+```git reset --hard origin/target``` will reset the target branch to the same state as the repo, great for you to be able to practice some more or try again
+
 
